@@ -83,7 +83,7 @@ function createOverlay() {
         <h2>How to Use the Number Base Converter</h2>
         <p>1. Enter the number you want to convert in the input box.</p>
         <p>2. Select the base of the number from the "From Base" dropdown menu.</p>
-        <p>3. Select the target base using the "To Base" dropdown menu or the range slider.</p>
+        <p>3. Select the target base using the "To Base" dropdown menu.</p>
         <p>4. Click the "Convert" button to see the result.</p>
         <p>5. Click the "Reset" button to clear all the fields.</p>
         <p>6. Optionally, click the "Copy Result" button to copy the result to your clipboard.</p>
