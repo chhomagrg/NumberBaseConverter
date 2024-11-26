@@ -1,0 +1,68 @@
+<!--
+      Number Base Converter
+
+      Author: Chhoma Gurung 
+      Date: 11/25/2024  
+
+      Filename: index.html
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <title>Chhoma's Number Base Converter</title>
+</head>
+<body>
+    <!-- Display current time -->
+    <div id="currentTime">00:00:00</div>
+<h1>Number Base Converter</h1>
+
+<!-- Main container -->
+<div class="container">
+    <div class="form-group">
+        <label for="inputNumber">Enter a number :</label>
+        <input type="text" id="inputNumber" placeholder="Enter a number">
+    </div>
+
+    <!-- Dropdowns-->
+    <div class="form-group">
+        <label for="fromBase">From Base :</label>
+        <select id="fromBase">
+            <option value="10">Decimal</option>
+            <option value="2">Binary</option>
+            <option value="8">Octal</option>
+            <option value="16">Hexadecimal</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="toBase">To Base :</label>
+        <select id="toBase">
+            <option value="10">Decimal</option>
+            <option value="2">Binary</option>
+            <option value="8">Octal</option>
+            <option value="16">Hexadecimal</option>
+        </select>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="button-group">
+        <button onclick="resetConverter()">Reset</button>
+        <button onclick="convertBase()">Convert</button>
+        <button onclick="copyToClipboard()">Copy Result</button>
+        <button onclick="createOverlay()">Help</button>
+    </div>
+
+    <!-- Result display box -->
+    <input type="text" id="resultField" readonly placeholder="Result will appear here">
+</div>
+    
+</body>
+</html>
